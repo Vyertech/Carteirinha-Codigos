@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity5">
+
+    <!-- esse é o icone da barrinha-->
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="60dp"
+        android:background="@drawable/quadrado"/>
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="-45dp"
+        android:text="Avaliação"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22dp" />
+
+    <TextView
+        android:text="Avalie o App"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:layout_marginTop="140dp"
+        android:gravity="center" />
+
+    <!-- icone das estrelas -->
+    <RatingBar
+        android:id="@+id/avaliacao"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#FFEB3B"
+        android:numStars="5"
+        android:progressTint="#FFEB3B"
+        android:stepSize="0.5" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="O que podemos melhorar? Deixe sua Sugestão!"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/sugestao"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="48dp"
+        android:hint="Escreva Aqui"
+        android:inputType="text"
+        android:layout_marginTop="50dp"/>
+
+
+    <Button
+        android:id="@+id/butao"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#F03434"
+        android:onClick="buttao"
+        android:text="Enviar"
+        android:textColor="@color/white"
+        />
+
+
+
+    <!-- esse é o circulo vermelho -->
+    <LinearLayout
+        android:layout_width="550dp"
+        android:layout_height="623dp"
+        android:layout_marginLeft="-70dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/formas_geometricas"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <!-- icone de log-out -->
+        <LinearLayout
+            android:id="@+id/imageButton9"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="275dp">
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:background="@color/Red"
+                android:contentDescription="TODO"
+                android:onClick="Log_out"
+                app:srcCompat="@drawable/log_out" />
+
+            <TextView
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-60dp"
+                android:layout_marginTop="40dp"
+                android:text="Log-out"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+
+        <!-- icone do home -->
+        <LinearLayout
+            android:id="@+id/imageButton10"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="-80dp">
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:background="@color/Red"
+                android:contentDescription="TODO"
+
+                android:onClick="home"
+                app:srcCompat="@drawable/homez" />
+
+            <TextView
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-50dp"
+                android:layout_marginTop="40dp"
+                android:text="Home"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <!-- esse é o icone do Tema Escuro -->
+        <ImageButton
+            android:id="@+id/btndark"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="-70dp" />
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="-4dp"
+            android:text="Tema"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

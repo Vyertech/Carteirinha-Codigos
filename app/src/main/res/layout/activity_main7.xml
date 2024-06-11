@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity7">
+
+    <!-- navbar do -->
+    <LinearLayout
+        android:layout_width="450dp"
+        android:layout_height="50dp"
+        android:background="@drawable/navibar">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notificações"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="wrap_content"
+        android:layout_height="650dp">
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/lixoo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/lixinho"
+        android:background="@color/Red"
+        android:layout_marginTop="25dp"
+        android:onClick="lixo"/>
+
+    <!-- esse é o icone da barrinha -->
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="120dp"
+        android:background="@drawable/quadrado"
+        android:layout_marginTop="5dp">
+
+        <!-- esse é o icone do Tema Escuro -->
+        <ImageButton
+            android:id="@+id/btndark"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="10dp" />
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:text="Tema"
+            android:layout_marginLeft="-40dp"
+            android:layout_marginTop="42dp"
+            android:textSize="16dp"
+            android:textColor="@color/white"/>
+
+
+
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/homez"
+            android:onClick="casaa"
+            android:layout_marginLeft="-150dp"
+            android:background="@color/Red"/>
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginTop="40dp"
+            android:textSize="16dp"
+            android:textColor="@color/white"/>
+
+
+
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/log_out"
+            android:onClick="Log_out"
+            android:layout_marginLeft="-160dp"
+            android:background="@color/Red" />
+
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:text="Log-out"
+            android:layout_marginLeft="-60dp"
+            android:layout_marginTop="40dp"
+            android:textSize="16dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

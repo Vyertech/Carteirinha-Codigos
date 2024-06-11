@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- linearLayout funciona como uma div, e faz o papel de varias camadas -->
+    <!-- dp se ajusta com as telas -->
+
+    <!-- esse LinearLayout é o circulo vermelho-->
+    <!-- fim de uma "div" do circulo vermelho-->
+
+    <LinearLayout
+        android:layout_width="550dp"
+        android:layout_height="623dp"
+        android:layout_marginLeft="-65dp"
+        android:layout_marginTop="-100dp"
+        android:background="@drawable/formas_geometricas"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+
+        <!-- esse ImageView é a imagem do senai-->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="104dp"
+            android:layout_marginLeft="165dp"
+            android:layout_marginTop="130dp"
+            app:srcCompat="@drawable/logo" />
+
+        <!-- o textView do texto carteirinha digital-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Carteirinha Digital"
+            android:textSize="26dp"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="165dp"
+            />
+
+        <!-- esse ImageView é a imagem do icone do boneco-->
+        <ImageView
+            android:id="@+id/imagemIcone"
+            android:layout_width="390dp"
+            android:layout_height="139dp"
+            android:layout_marginLeft="70dp"
+            app:srcCompat="@drawable/bonequin" />
+
+        <!-- esse EditText é a caixa de colocar o email-->
+        <EditText
+            android:id="@+id/tvusuario"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/borda"
+            android:hint="CPF"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <!-- esse EditText é a caixa de colocar o senha-->
+        <EditText
+            android:id="@+id/tvsenha"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/borda"
+            android:inputType="textPassword"
+            android:hint="Senha"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+
+        <!-- esse TextView é o "link" do esqueceu a senha
+        <TextView
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="20dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:text="Esqueceu a senha?"
+            android:textSize="16dp" /> -->
+
+
+
+    </LinearLayout>
+
+    <!-- esse Button é o de efetuar o login-->
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/Red2"
+        android:textSize="18dp"
+        android:text="Entrar"
+        android:onClick="Entrar" />
+
+    <ImageButton
+        android:id="@+id/btndark"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginLeft="180dp"/>
+
+
+
+
+</LinearLayout>
+
